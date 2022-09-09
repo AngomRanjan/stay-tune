@@ -10,7 +10,7 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Shows />} />
-        {/* <Route path="/shows/:id" element={<ShowInfo />} /> */}
+        <Route path="/shows/:id" element={<ShowInfo />} />
       </Routes>
     </BrowserRouter>
   );
