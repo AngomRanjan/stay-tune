@@ -2,7 +2,7 @@ import '../css/Show.css';
 import PropTypes from 'prop-types';
 
 const Show = ({
-  id, name, image='', rating='', genres='',
+  id, name, image, rating, genres,
 }) => {
   const temp = 'show';
 
@@ -11,8 +11,8 @@ const Show = ({
       <div
         className={temp}
         style={{
-          background: `linear-gradient(rgba(151,3,55,0.5),
-          rgba(151,3,55,0.5)) , url(${image}) no-repeat center top`,
+          background: `linear-gradient(#b4b4b4cc,
+          #313131aa) , url(${image}) no-repeat center top`,
           backgroundSize: 'contain',
         }}
         name={name}
@@ -30,11 +30,17 @@ const Show = ({
   );
 };
 
+Show.defaultProps = {
+  image: 'none',
+  rating: 5,
+  genres: 'general',
+};
+
 Show.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string,
-  rating: PropTypes.string,
+  rating: PropTypes.number,
   genres: PropTypes.string,
 };
 

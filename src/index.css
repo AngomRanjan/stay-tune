@@ -11,3 +11,8 @@
   --light: 300;
   --fsLarge: 2em;
 }
+
+body {
+  background-color: var(--bgPrime);
+  color: var(--fgPrime);
+}

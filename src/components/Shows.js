@@ -1,29 +1,34 @@
 import '../css/Shows.css';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Show from './Show';
-import { getShowsAction } from '../redux/shows';
+import { getShowsAction } from '../redux/showsReducer';
 
 const Shows = () => {
-  const dispatch = useDispatch();
   const shows = useSelector((state) => state.shows);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (!shows.length) dispatch(getShowsAction());
+    dispatch(getShowsAction());
   }, []);
 
   return (
     <div
       className="shows"
     >
-    <Show
-            id={0}
-            name="test"
-            image=""
-            rating=""
-            genres=""
-          />
+      {shows.map((show) => (
+        <Show
+          key={show.id}
+          id={show.id}
+          name={show.name}
+          image={show.image.medium}
+          rating={show.rating.average}
+          genres={show.genres[0]}
+          onClick={() => navigate('/')}
+        />
+      ))}
     </div>
   );
 };

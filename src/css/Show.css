@@ -1,0 +1,24 @@
+/* Show Stylesheet */
+
+.show {
+  width: 150px;
+  height: 243px;
+  box-shadow: 0 5px 17px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.show:focus,
+  .show:hover {
+  transform: scale(1.07);
+}
+
+.show__title {
+  font-weight: 400;
+  font-size: 16px;
+}
