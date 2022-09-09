@@ -18,17 +18,22 @@ const Shows = () => {
     <div
       className="shows"
     >
-      {shows.map((show) => (
-        <Show
-          key={show.id}
-          id={show.id}
-          name={show.name}
-          image={show.image.medium}
-          rating={show.rating.average}
-          genres={show.genres[0]}
-          onClick={() => navigate('/')}
-        />
-      ))}
+      <section className="shows__topBar">
+        Space for top bar
+      </section>
+      <main className="shows__container">
+        {shows.map((show) => (
+          <Show
+            key={show.id}
+            id={show.id}
+            name={show.name}
+            image={show.image.medium}
+            rating={show.rating.average}
+            genres={show.genres[0]}
+            onClick={() => navigate('/')}
+          />
+        ))}
+      </main>
     </div>
   );
 };

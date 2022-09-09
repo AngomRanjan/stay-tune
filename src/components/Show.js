@@ -18,13 +18,15 @@ const Show = ({
         name={name}
         id={id}
       >
-        <h4 className="show__title">
-          {'  rating:  '}
-          {rating}
-        </h4>
-        <p>
-          {genres}
-        </p>
+        <div className="show__info">
+          <h4 className="show__title">
+            {genres}
+          </h4>
+          <p>
+            {'  rating:  '}
+            {rating}
+          </p>
+        </div>
       </div>
     </>
   );
