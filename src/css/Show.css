@@ -28,12 +28,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--bgSec);
-  border-bottom-right-radius: 33px;
-  border-bottom-left-radius: 33px;
+  background-color: var(--bgPrime);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .show__title {
-  font-weight: var(--light);
   font-size: .85em;
 }
