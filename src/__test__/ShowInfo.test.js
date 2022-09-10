@@ -5,6 +5,7 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import ShowInfo from '../components/ShowInfo';
 import store from '../redux/configureStore';
+import { fetchShowInfo } from '../redux/showInfoReducer';
 
 describe('Test for Details', () => {
   test('should render', () => {
@@ -16,5 +17,14 @@ describe('Test for Details', () => {
       </Provider>,
     );
     expect(detailpage).toMatchSnapshot();
+  });
+
+  it('should return an action with type GET_SHOWS', () => {
+    const data = [{
+      id: 1,
+      name: 'arfs',
+    }];
+    const action = fetchShowInfo(data);
+    expect(action.type).toBe('GET_SHOW_INFO');
   });
 });
