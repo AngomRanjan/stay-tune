@@ -2,7 +2,7 @@
 
 # Stay Tune
 
-> React Capstone Project
+> This is my first React Capstone Project. In the project, I build a tv show sites, which gives information about Shows telecast on TV Maze. I choose a dark color theme for this particular project. I have used a shade of black (#1b1b1b). I would like to thank  Nelson Sakwa on Behance for the original design idea.  This app was build using HTNL, CSS, JavaScript, React and Redux.
 
 ## Built With
 
@@ -10,10 +10,13 @@
 - CSS
 - Javascript
 - React
+- Redux
 
 ## Live Demo
 
 [Live Demo Link](https://stay-tune-angom.netlify.app)
+
+[Project Presentation Video](https://www.loom.com/share/59358e0d86054813a5687fdc44ac7ffd)
 
 ## Authors
 
@@ -46,6 +49,9 @@ Give a [⭐️](https://github.com/AngomRanjan/stay-tune/stargazers) if you like
 ## Acknowledgments
 - Microverse Team
 - My Family
+- Nelson Sakwa on Behance for providing the original design idea.
+- TV Maze API service for giving access to their API.
+- All my fellow micronauts.
 
 ## 📝 License
 

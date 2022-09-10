@@ -18,7 +18,7 @@ describe('Shows tests', () => {
     );
     expect(detailpage).toMatchSnapshot();
   });
-  
+
   it('should return an action with type GET_SHOWS', () => {
     const data = [{
       id: 1,
