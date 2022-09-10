@@ -23,12 +23,18 @@
 to run the project locally, clone the project using the command
 
 - git clone git@github.com:AngomRanjan/stay-tune.git
+
+# To Install type the following command
+
 - npm install
 
-### Run test
+## Run App type the following command
 
-navigate to the project directory, from GitHub,
-to test or run the application double click on the `index.html` file to open in your browser
+  - npm start
+
+### To Run test cases type the following command
+
+  - npm test
 
 ## Live Demo
 
