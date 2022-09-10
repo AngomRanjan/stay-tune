@@ -20,15 +20,15 @@
 
 ## Getting started
 
-to run the project locally, clone the project using the command
+Go to the Folder where want to copy this repo and type the following cmds in you terminal:
 
 - git clone git@github.com:AngomRanjan/stay-tune.git
 
-# To Install type the following command
+## To Install type the following command
 
 - npm install
 
-## Run App type the following command
+## To Run App type the following command
 
   - npm start
 
