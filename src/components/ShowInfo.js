@@ -104,7 +104,6 @@ const ShowInfo = () => {
               </p>
             </div>
           </section>
-          {console.log(show)}
         </div>
       ))}
     </div>

@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import ShowInfo from './components/ShowInfo';
 import Shows from './components/Shows';
-import './css/App.css';
 
 function App() {
   return (

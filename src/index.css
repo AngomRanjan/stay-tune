@@ -11,7 +11,7 @@
   --normal: 400;
   --light: 300;
   --fsLarge: 2em;
-  --priFont: font-family: 'Lato';
+  --priFont: font-family;
 }
 
 * {
@@ -81,5 +81,9 @@ body {
   .banner,
   .showInfo__details {
     width: 50%;
+  }
+
+  .shows_banner {
+    width: 100%;
   }
 }

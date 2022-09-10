@@ -7,3 +7,34 @@
   margin: 0 auto;
   padding: 0.25em;
 }
+
+.sheader__center {
+  display: flex;
+  align-items: center;
+  background-color: #646363f0;
+  padding: 7px 17px;
+  border-radius: 0 99px;
+  height: 34px;
+  justify-content: left;
+  width: 260px;
+  margin: 10px 10px 10px 10px;
+}
+
+.sheader__center input {
+  border: none;
+  background-color: transparent;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.sheader__tools {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}
+
+.sheader__tools > .MuiSvgIcon-root {
+  color: #fff;
+}
