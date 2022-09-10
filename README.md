@@ -2,7 +2,7 @@
 
 # Stay Tune
 
-> This is my first React Capstone Project. In the project, I build a tv show sites, which gives information about Shows telecast on TV Maze. I choose a dark color theme for this particular project. I have used a shade of black (#1b1b1b). I would like to thank  Nelson Sakwa on Behance for the original design idea.  This app was build using HTNL, CSS, JavaScript, React and Redux.
+> This is my first React Capstone Project. In the project, I build a tv show sites, which gives information about Shows telecast on TV Maze. I choose a dark color theme for this particular project. I have used a shade of black (#1b1b1b). I would like to thank  Nelson Sakwa on Behance for the original design idea.  This app was build using HTML, CSS, JavaScript, React and Redux.
 
 ## Built With
 
