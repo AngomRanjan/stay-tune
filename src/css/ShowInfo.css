@@ -24,11 +24,11 @@
 }
 
 .rows:nth-child(odd) {
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 10%);
 }
 
 .rows:nth-child(even) {
-  background-color: hsl(0, 0%,17%);
+  background-color: hsl(0, 0%, 15%);
 }
 
 .rows > p {
@@ -37,4 +37,12 @@
 
 .showInfo__summary {
   margin: 0.5em 0;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+  .showInfo__details {
+    margin-top: 60px;
+  }
 }

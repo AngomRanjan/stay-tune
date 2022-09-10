@@ -11,8 +11,8 @@ const Show = ({
       <div
         className={temp}
         style={{
-          background: `linear-gradient(#b4b4b4cc,
-          #313131aa) , url(${image}) no-repeat center top`,
+          background: `linear-gradient(#b4b4b400,
+          #31313100) , url(${image}) no-repeat center top`,
           backgroundSize: 'contain',
         }}
         name={name}

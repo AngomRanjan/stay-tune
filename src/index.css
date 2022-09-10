@@ -11,7 +11,7 @@
   --normal: 400;
   --light: 300;
   --fsLarge: 2em;
-  --priFont: font-family: 'Lato', sans-serif;
+  --priFont: font-family: 'Lato';
 }
 
 * {
@@ -35,7 +35,7 @@ body {
 
 .banner {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 50px);
 }
 
 .banner__intro {
@@ -46,14 +46,16 @@ body {
   width: 100%;
   color: var(--fgPrime);
   background:
-    linear-gradient(5deg,
+    linear-gradient(
+      5deg,
       #1f1f1fff 40%,
       #1f1f1fee 50%,
       #1f1f1fbb 60%,
       #1f1f1f80 70%,
       #1f1f1f50 80%,
       #1f1f1f10 90%,
-      transparent 100%);
+      transparent 100%
+    );
 }
 
 .banner__intro__content {
@@ -77,8 +79,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .banner,
-  .showInfo__details{
+  .showInfo__details {
     width: 50%;
   }
 }
-
