@@ -3,11 +3,12 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SettingsIcon from '@mui/icons-material/Settings';
 import MicIcon from '@mui/icons-material/Mic';
 import { IconButton } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="header">
@@ -20,10 +21,7 @@ const Header = () => {
 
       <div className="header__center">
         <IconButton className="header__backArrow">
-          <ArrowBackIcon
-            fontSize="medium"
-            onClick={() => navigate('/')}
-          />
+          {(location.pathname !== '/') && <ArrowBackIcon fontSize="medium" onClick={() => navigate('/')} />}
         </IconButton>
       </div>
 
