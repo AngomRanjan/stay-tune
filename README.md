@@ -28,7 +28,7 @@ Go to the Folder where want to copy this repo and type the following cmds in you
 
 - npm install
 
-## To Run App type the following command
+## To Run App type the following command in your terminal
 
   - npm start
 
