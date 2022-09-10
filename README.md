@@ -12,6 +12,24 @@
 - React
 - Redux
 
+## Prerequisites
+
+- Good knowledge on javascript objects
+- VSCode or other text editor installed. [Link to download VSCode](https://code.visualstudio.com/download)
+- Node package. [Link to download node](https://nodejs.org/en/download/)
+
+## Getting started
+
+to run the project locally, clone the project using the command
+
+- git clone git@github.com:AngomRanjan/stay-tune.git
+- npm install
+
+### Run test
+
+navigate to the project directory, from GitHub,
+to test or run the application double click on the `index.html` file to open in your browser
+
 ## Live Demo
 
 [Live Demo Link](https://stay-tune-angom.netlify.app)
