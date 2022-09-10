@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.2em 2.5em;
+  gap: 0.15em 0.1em;
   max-width: 960px;
   margin: 0 auto;
-  background-color: var(--bgSec);
   padding: 0.25em;
 }

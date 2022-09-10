@@ -5,7 +5,7 @@ import showInfoReducer from './showInfoReducer';
 
 const rootReducer = combineReducers({
   shows: showsReducer,
-  showInfos: showInfoReducer.
+  showInfos: showInfoReducer,
 });
 
 const store = configureStore({

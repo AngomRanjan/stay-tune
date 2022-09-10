@@ -2,6 +2,7 @@ import '../css/Shows.css';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { IconButton } from '@mui/material';
 import Show from './Show';
 import { getShowsAction } from '../redux/showsReducer';
 
@@ -23,15 +24,20 @@ const Shows = () => {
       </section>
       <main className="shows__container">
         {shows.map((show) => (
-          <Show
+          <IconButton
             key={show.id}
-            id={show.id}
-            name={show.name}
-            image={show.image.medium}
-            rating={show.rating.average}
-            genres={show.genres[0]}
-            onClick={() => navigate('/')}
-          />
+            onClick={() => navigate(`/showInfos/${show.id}`)}
+            className="icon__button--noDeco"
+          >
+            <Show
+              id={show.id}
+              name={show.name}
+              image={show.image.medium}
+              rating={show.rating.average}
+              genres={show.genres[0]}
+            />
+          </IconButton>
+
         ))}
       </main>
     </div>

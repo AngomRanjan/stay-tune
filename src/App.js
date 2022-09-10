@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Header from './components/
-// import ShowInfo from './components/ShowInfo';
+import ShowInfo from './components/ShowInfo';
 import Shows from './components/Shows';
 import './css/App.css';
 
@@ -10,7 +10,7 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Shows />} />
-        <Route path="/shows/:id" element={<ShowInfo />} />
+        <Route path="/showinfos/:id" element={<ShowInfo />} />
       </Routes>
     </BrowserRouter>
   );

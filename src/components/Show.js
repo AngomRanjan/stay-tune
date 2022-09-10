@@ -22,8 +22,8 @@ const Show = ({
           <h4 className="show__title">
             {genres}
           </h4>
-          <p>
-            {'  rating:  '}
+          <p className="show__title">
+            {'  Rating:  '}
             {rating}
           </p>
         </div>

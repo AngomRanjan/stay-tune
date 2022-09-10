@@ -1,4 +1,5 @@
 /* main style */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
   --bgPrime: #1f1f1f;
@@ -6,13 +7,78 @@
   --bgLight: #494949;
   --fgSec: #b4b4b4;
   --fgPrime: #dedede;
-  --bold: 600;
+  --bold: 700;
   --normal: 400;
   --light: 300;
   --fsLarge: 2em;
+  --priFont: font-family: 'Lato', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background-color: var(--bgPrime);
   color: var(--fgPrime);
+  width: 100%;
+  height: 100vh;
+  font-family: var(--priFont);
 }
+
+.showInfo__details,
+.showInfo__details_header,
+.banner {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+}
+
+.banner__intro {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  color: var(--fgPrime);
+  background:
+    linear-gradient(5deg,
+      #1f1f1fff 40%,
+      #1f1f1fee 50%,
+      #1f1f1fbb 60%,
+      #1f1f1f80 70%,
+      #1f1f1f50 80%,
+      #1f1f1f10 90%,
+      transparent 100%);
+}
+
+.banner__intro__content {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 1.5em;
+  width: 85%;
+}
+
+.banner__intro__title {
+  font-size: var(--fsLarge);
+  font-weight: var(--bold);
+  margin-bottom: 5px;
+}
+
+.appName,
+.tagline {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 769px) {
+  .banner,
+  .showInfo__details{
+    width: 50%;
+  }
+}
+

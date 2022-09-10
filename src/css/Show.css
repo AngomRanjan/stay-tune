@@ -34,5 +34,7 @@
 }
 
 .show__title {
-  font-size: .85em;
+  font-size: .60em;
+  color: var(--fgPrime);
+  font-weight: var(--light);
 }

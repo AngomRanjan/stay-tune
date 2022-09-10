@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const GET_SHOW_INFO = 'GET_SHOW_INFO';
 
@@ -8,10 +8,10 @@ export const fetchShowInfo = (data) => ({
   type: GET_SHOW_INFO, payload: data,
 });
 
-export const getShowInfoAction = (BaseUrl) => async(dispatch) => {
+export const getShowInfoAction = (BaseUrl) => async (dispatch) => {
   await axios.get(BaseUrl)
     .then((res) => {
-      dispatch(fetchShows(res.data));
+      dispatch(fetchShowInfo(res.data));
     });
 };
 
