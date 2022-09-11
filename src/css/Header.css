@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  padding: 5px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #d4d4d4cc;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__right,
+.header__left {
+  display: flex;
+}
+
+.header__left > img {
+  height: 32px;
+}
+
+.header__center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
