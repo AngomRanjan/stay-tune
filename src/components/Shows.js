@@ -13,7 +13,7 @@ const Shows = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
-
+/* eslint-disable */
   useEffect(() => {
     dispatch(getShowsAction());
   }, []);
