@@ -9,6 +9,7 @@ const ShowInfo = () => {
   const showInfo = useSelector((state) => state.showInfos);
   const dispatch = useDispatch();
   const BaseUrl = `https://api.tvmaze.com/shows/${id}`;
+  /* eslint-disable */
   useEffect(() => {
     dispatch(getShowInfoAction(BaseUrl));
   }, [BaseUrl]);
