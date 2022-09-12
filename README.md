@@ -40,8 +40,6 @@ Go to the Folder where want to copy this repo and type the following cmds in you
 
 [Live Demo Link](https://stay-tune-angom.netlify.app)
 
-[Project Presentation Video](https://www.loom.com/share/59358e0d86054813a5687fdc44ac7ffd)
-
 ## Authors
 
 👤 Angom Chittaranjan
